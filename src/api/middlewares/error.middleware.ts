@@ -15,6 +15,8 @@ export const errorMiddleware = (
   res.status(500).json(finalResponse);
 };
 
+
+
 export const catchError =
   (fn: (req: Request, res: Response, next: NextFunction) => Promise<any>) =>
   (req: Request, res: Response, next: NextFunction) => {
