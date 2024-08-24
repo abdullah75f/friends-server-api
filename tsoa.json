@@ -1,0 +1,21 @@
+{
+  "entryFile": "src/index.ts",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "controllerPathGlobs": ["src/api/controllers/*.controller.ts"],
+  "spec": {
+    "outputDirectory": "src/api/swagger",
+    "specVersion": 3,
+    "securityDefinitions": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "routes": {
+    "routesDir": "src/api/routes",
+    "authenticationModule": "src/api/middlewares/authentication.middleware.ts",
+    "iocModule": "src/api/iocModule/ioc.ts"
+  }
+}
