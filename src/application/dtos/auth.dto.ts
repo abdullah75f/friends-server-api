@@ -20,6 +20,7 @@ export interface AuthDTO {
   password: string;
 }
 
+
 export interface AuthTokenDTO {
   token: string;
 }
