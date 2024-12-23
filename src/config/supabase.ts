@@ -6,6 +6,7 @@ dotenv.config({ path: path.resolve(__dirname, "../../.env") });
 
 
 let supabaseClient: SupabaseClient;
+
 const supabase = () => {
   if (supabaseClient) return supabaseClient;
   supabaseClient = createClient(
