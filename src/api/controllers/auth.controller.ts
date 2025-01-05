@@ -9,6 +9,7 @@ import {
 } from "../middlewares/response.middleware";
 import { UserCreateDTO } from "../../application/dtos/user.dto";
 
+
 @injectable()
 @Tags("Authentication")
 @Route("auth")
