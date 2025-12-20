@@ -1,4 +1,5 @@
 # Build stage
+# Server
 FROM node:20.16.0-alpine AS build
 
 WORKDIR /usr/server
